@@ -102,28 +102,30 @@ if prompt := st.chat_input("What is up?"):
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
 
-# End the timer
-end_time = time.time()    
-  
+    utc_now = datetime.now(timezone.utc)
+    utc_plus_8 = utc_now + timedelta(hours=8)
+
+    # End the timer
+    end_time = time.time()
+    
+    # Calculate the execution time
+    execution_time = end_time - start_time
+    
+    new_entry = pd.DataFrame({
+            'timestamp': [utc_plus_8.now().strftime('%Y-%m-%d %H:%M:%S')],
+            'model': [repo_id],
+            'n_docs': [n_retrieved_docs],
+            'prompt': [prompt],
+            'response': [response],
+            'generation_time': [execution_time]
+        })
+
 try:
     df_record = pd.read_csv('./records.csv', index_col=0)
 except FileNotFoundError:
     df_record = pd.DataFrame(columns=['timestamp', 'model', 'n_docs', 'prompt', 'response', 'generation_time'])
 
-utc_now = datetime.now(timezone.utc)
-utc_plus_8 = utc_now + timedelta(hours=8)
 
-# Calculate the execution time
-execution_time = end_time - start_time
-
-new_entry = pd.DataFrame({
-        'timestamp': [utc_plus_8.now().strftime('%Y-%m-%d %H:%M:%S')],
-        'model': [repo_id],
-        'n_docs': [n_retrieved_docs],
-        'prompt': [prompt],
-        'response': [response],
-        'generation_time': [execution_time]
-    })
 
 df_csv = pd.concat([df_record, new_entry], ignore_index=True)
 
