@@ -120,15 +120,12 @@ if prompt := st.chat_input("What is up?"):
             'generation_time': [execution_time]
         })
 
-try:
-    df_record = pd.read_csv('./records.csv', index_col=0)
-except FileNotFoundError:
-    df_record = pd.DataFrame(columns=['timestamp', 'model', 'n_docs', 'prompt', 'response', 'generation_time'])
-
-
-
-df_csv = pd.concat([df_record, new_entry], ignore_index=True)
-
-
-df_csv.to_csv('./records.csv')
+    try:
+        df_record = pd.read_csv('./records.csv', index_col=0)
+    except FileNotFoundError:
+        df_record = pd.DataFrame(columns=['timestamp', 'model', 'n_docs', 'prompt', 'response', 'generation_time'])
+    
+    df_csv = pd.concat([df_record, new_entry], ignore_index=True)
+    
+    df_csv.to_csv('./records.csv')
 # st.write(message)
