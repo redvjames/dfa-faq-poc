@@ -113,7 +113,7 @@ if prompt := st.chat_input("What is up?"):
     execution_time = end_time - start_time
     
     new_entry = pd.DataFrame({
-            'timestamp': [utc_plus_8.now().strftime('%Y-%m-%d %H:%M:%S')],
+            'timestamp': [utc_plus_8.strftime('%Y-%m-%d %H:%M:%S')],
             'model': [repo_id],
             'n_docs': [n_retrieved_docs],
             'prompt': [prompt],
