@@ -129,4 +129,6 @@ if prompt := st.chat_input("What is up?"):
     df_csv = pd.concat([df_record, new_entry], ignore_index=True)
     
     df_csv.to_csv('./records.csv')
+
+    st.dataframe(df_csv, height=500, width=500)
 # st.write(message)
