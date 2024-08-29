@@ -129,5 +129,5 @@ if prompt := st.chat_input("What is up?"):
     
     df_csv.to_csv('./records.csv')
 
-    st.dataframe(df_csv, height=500, width=500)
+    st.dataframe(df_csv, height=300, width=100)
 # st.write(message)
