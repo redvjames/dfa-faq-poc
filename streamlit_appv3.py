@@ -7,7 +7,6 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timezone, timedelta
 import time
-import streamlit_gsheets
 
 # Create columns for the title and logo
 col1, col2 = st.columns([3.5, 1])  # Adjust the ratio as needed
