@@ -135,9 +135,9 @@ if prompt := st.chat_input("What is up?"):
             'generation_time': [execution_time]
         })
 
-    df_csv = pd.concat([df_record, new_entry], ignore_index=True)
+    df_record = pd.concat([df_record, new_entry], ignore_index=True)
     
-    df_csv.to_csv('./records.csv')
+    df_record.to_csv('./records.csv')
 
-    st.dataframe(df_csv, height=300, width=1000)
+    st.dataframe(df_record, height=300, width=1000)
 # st.write(message)
