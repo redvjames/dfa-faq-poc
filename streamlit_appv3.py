@@ -66,7 +66,7 @@ n_retrieved_docs = st.sidebar.number_input(
 )
 
 def convert_df(df):
-   return df.to_csv(index=False).encode('utf-8')
+   return df.to_csv(index=False)
 
 st.sidebar.download_button('Download Results Data', 
                             convert_df(df_record), 
