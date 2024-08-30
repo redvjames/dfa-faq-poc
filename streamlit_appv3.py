@@ -8,6 +8,12 @@ import numpy as np
 from datetime import datetime, timezone, timedelta
 import time
 
+try:
+    df_record = pd.read_csv('./records.csv', index_col=0)
+except FileNotFoundError:
+    df_record = pd.DataFrame(columns=['timestamp', 'model', 'n_docs', 'prompt', 'response', 'generation_time'])
+
+
 # Create columns for the title and logo
 col1, col2 = st.columns([3.5, 1])  # Adjust the ratio as needed
 
@@ -58,6 +64,10 @@ n_retrieved_docs = st.sidebar.number_input(
     value=5,  # Default value
     step=1
 )
+
+st.sidebar.download_button('Download Results Data', 
+                            './records.csv', 
+                            'records.csv')
 
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain_community.vectorstores import Chroma
@@ -120,11 +130,6 @@ if prompt := st.chat_input("What is up?"):
             'generation_time': [execution_time]
         })
 
-    try:
-        df_record = pd.read_csv('./records.csv', index_col=0)
-    except FileNotFoundError:
-        df_record = pd.DataFrame(columns=['timestamp', 'model', 'n_docs', 'prompt', 'response', 'generation_time'])
-    
     df_csv = pd.concat([df_record, new_entry], ignore_index=True)
     
     df_csv.to_csv('./records.csv')
