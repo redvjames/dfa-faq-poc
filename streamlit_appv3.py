@@ -70,7 +70,9 @@ def convert_df(df):
 
 st.sidebar.download_button('Download Results Data', 
                             convert_df(df_record), 
-                            'records.csv')
+                            'records.csv',
+                            "text/csv",
+                            key='download-csv')
 
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain_community.vectorstores import Chroma
