@@ -65,8 +65,11 @@ n_retrieved_docs = st.sidebar.number_input(
     step=1
 )
 
+def convert_df(df):
+   return df.to_csv(index=False).encode('utf-8')
+
 st.sidebar.download_button('Download Results Data', 
-                            df_record.to_csv('./records.csv').encode('utf-8'), 
+                            convert_df(df_record), 
                             'records.csv')
 
 from langchain_huggingface import HuggingFaceEndpoint
