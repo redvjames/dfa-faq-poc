@@ -52,7 +52,8 @@ repo_id = st.sidebar.selectbox(
         "mistralai/Mistral-7B-Instruct-v0.2",
         "mistralai/Mistral-7B-Instruct-v0.3",
         "microsoft/Phi-3-mini-4k-instruct",
-        "google/gemma-2-2b-it"
+        "google/gemma-2-2b-it",
+        "mistralai/Mistral-Small-Instruct-2409"
     ],
     index=0  # Default selection
 )
