@@ -193,5 +193,3 @@ zipp==3.19.2
 zstandard==0.23.0
 st-gsheets-connection
 gspread
-vLLM >= v0.6.1.post1
-mistral_common >= 1.4.1
