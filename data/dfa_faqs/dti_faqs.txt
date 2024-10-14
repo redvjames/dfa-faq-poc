@@ -1,0 +1,9 @@
+{'category': 'COMPLAINTS HANDLING',
+'question': 'What is handling of complaints?',
+'answer': 'Under Republic Act No. 7394 otherwise known as the Consumer Act of the Philippines, it is the policy of the State to protect the interests of the consumer, promote his general welfare and to establish standards of conduct for business and industry. Accordingly, Article 159 of the Consumer Act and Sections 2 and 18 of Executive Order No. 913, mandates DTI to protect the rights of consumers by providing a fair, timely, and professional response to complaints for violations of R.A. 7394 and other Trade and Industry/Fair Trade Laws.'},
+{'category': 'COMPLAINTS HANDLING',
+'question': 'How do I use the complaints handling system?)?',
+'answer': 'You may access the User's Manual through the following links: For Complainants, use the link https://drive.google.com/file/d/1OWZloViSpgfqYVIGAms77uAwUe1aeECQ/view?usp=sharing and for Respondents (Business/Establishment), use the link https://drive.google.com/file/d/12-_N53kulMJD-SlHLjsXxlLsPxa-az0c/view?usp=sharing.'},
+{'category': 'FILE A CONSUMER COMPLAINT',
+'question': 'What complaints can I file to DTI?',
+'answer': 'Consumer complaints filed with DTI may cover any, but not limited to the following: Liability for Product and Services (i.e. Defective or Imperfect Products/Services); Deceptive Sales Acts/Practices; Consumer Product Quality and Safety; Violation for printing "No Return. No Exchange" in the receipts; Chain Distribution Plans or Pyramid Sales Schemes; Consumer Product and Service Warranties; Labeling and Fair Packaging; Misleading Advertisement and Fraudulent Sales Promotion Practices; Regulation of Repair and Service Firms; Philippine Lemon Law.'}
