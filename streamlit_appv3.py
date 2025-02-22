@@ -37,7 +37,7 @@ uploaded_file = st.file_uploader("Upload image")
 
 if uploaded_file is not None:
     # Can be used wherever a "file-like" object is accepted:
-    image = Image.open('uploaded_file')
+    image = uploaded_file.read()
     st.image(image)
 
 
