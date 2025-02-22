@@ -35,4 +35,6 @@ with col2:
 
 uploaded_file = st.file_uploader("Upload image")
 
-st.image(uploaded_file)
+image = Image.open('uploaded_file')
+
+st.image(image)
