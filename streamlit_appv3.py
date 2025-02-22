@@ -47,6 +47,7 @@ if uploaded_file is not None:
 
     with col2:
         if st.button('Screen Image'):
+            None
 
 
 
