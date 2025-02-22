@@ -36,9 +36,17 @@ with col2:
 uploaded_file = st.file_uploader("Upload image")
 
 if uploaded_file is not None:
-    # Can be used wherever a "file-like" object is accepted:
-    image = uploaded_file.read()
-    st.image(image)
+
+    # Create columns for the title and logo
+    col1, col2 = st.columns([3.5, 1])  # Adjust the ratio as needed
+
+    with col1:
+        # Can be used wherever a "file-like" object is accepted:
+        image = uploaded_file.read()
+        st.image(image)
+
+    with col2:
+        if st.button('Screen Image'):
 
 
 
