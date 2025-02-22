@@ -38,7 +38,7 @@ uploaded_file = st.file_uploader("Upload image")
 if uploaded_file is not None:
 
     # Create columns for the title and logo
-    col1, col2 = st.columns([3.5, 1])  # Adjust the ratio as needed
+    col1, col2 = st.columns([3, 1.5])  # Adjust the ratio as needed
 
     with col1:
         # Can be used wherever a "file-like" object is accepted:
@@ -47,7 +47,15 @@ if uploaded_file is not None:
 
     with col2:
         if st.button('Screen Image'):
-            None
+
+            height = 170
+            weight = 80
+            result = 'Normal'
+            
+            st.write(f'Height: {height} cm')
+            st.write(f'Weight: {weight} kg')
+            st.title(f'Result: {result})
+            
 
 
 
