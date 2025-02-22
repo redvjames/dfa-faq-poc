@@ -18,8 +18,8 @@ col1, col2 = st.columns([3.5, 1])  # Adjust the ratio as needed
 with col1:
     st.title("🤖 SIGLA Proof of Concept")
     st.write(
-        "This app screens if a student is stunted or wasted"
-        " based on the image of the student."
+        "This app screens if student is stunted or wasted"
+        " based on the student's image."
     )
 # Logo and "Developed by E-CAIR" text in the second column
 with col2:
