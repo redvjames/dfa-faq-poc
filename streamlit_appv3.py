@@ -48,6 +48,8 @@ if uploaded_file is not None:
     with col2:
         if st.button('Screen Image'):
 
+            st.sidebar.image("images/sam2.png")
+
             height = 170
             weight = 80
             bmi = 24.9
