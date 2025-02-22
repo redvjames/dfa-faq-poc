@@ -7,7 +7,7 @@ from datetime import datetime, timezone, timedelta
 import time
 import pandas as pd
 import numpy as np
-# import matplotlib.pyplot as plt
+from PIL import Image
 from pathlib import Path
 import os
 
