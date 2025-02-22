@@ -53,9 +53,9 @@ if uploaded_file is not None:
             bmi = 24.9
             result = 'Normal'
             
-            st.write(f'Height: {height} cm')
-            st.write(f'Weight: {weight} kg')
-            st.write(f'BMI: {bmi}')
+            st.write(f'Height-for-age Result: {height} cm')
+            st.write(f'Weight-for-age Result: {weight} kg')
+            st.write(f'BMI-for-Age: {bmi}')
             st.write(f'Result: {result}')
             
 
