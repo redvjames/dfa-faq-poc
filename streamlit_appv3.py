@@ -35,6 +35,11 @@ with col2:
 
 uploaded_file = st.file_uploader("Upload image")
 
-image = Image.open('uploaded_file')
+if uploaded_file is not None:
+    # Can be used wherever a "file-like" object is accepted:
+    image = Image.open('uploaded_file')
+    st.image(image)
 
-st.image(image)
+
+
+
