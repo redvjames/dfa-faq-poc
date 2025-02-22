@@ -19,7 +19,7 @@ with col1:
     st.title("🤖 SIGLA Proof of Concept")
     st.write(
         "This app screens if a student is stunted or wasted"
-        " with an input of the image of the student."
+        " based on the image of the student."
     )
 # Logo and "Developed by E-CAIR" text in the second column
 with col2:
