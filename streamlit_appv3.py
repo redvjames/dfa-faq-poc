@@ -54,7 +54,7 @@ if uploaded_file is not None:
             
             st.write(f'Height: {height} cm')
             st.write(f'Weight: {weight} kg')
-            st.title(f'Result: {result})
+            st.title(f'Result: {result}')
             
 
 
