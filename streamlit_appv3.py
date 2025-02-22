@@ -10,9 +10,6 @@ import numpy as np
 # import matplotlib.pyplot as plt
 from pathlib import Path
 import os
-import torch
-import tomli
-
 
 # Create columns for the title and logo
 col1, col2 = st.columns([3.5, 1])  # Adjust the ratio as needed
