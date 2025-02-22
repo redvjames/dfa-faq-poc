@@ -16,7 +16,7 @@ col1, col2 = st.columns([3.5, 1])  # Adjust the ratio as needed
 
 # Title in the first column
 with col1:
-    st.title("🤖 SIGLA Proof of Concept")
+    st.title("📷 SIGLA Proof of Concept")
     st.write(
         "This app screens if student is stunted or wasted"
         " based on the student's image."
