@@ -43,7 +43,7 @@ if uploaded_file is not None:
     with col1:
         # Can be used wherever a "file-like" object is accepted:
         image = uploaded_file.read()
-        st.image(image, width=2)
+        st.image(image, width=200)
 
     with col2:
         if st.button('Screen Image'):
