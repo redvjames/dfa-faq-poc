@@ -49,6 +49,12 @@ if uploaded_file is not None:
         if st.button('Screen Image'):
 
             st.sidebar.image("images/sam2.png")
+            head = 20
+            arm = 5
+            leg = 5
+            st.sidebar.write(f'Head Measurement: {head} cm')
+            st.sidebar.write(f'Arm Measurement: {arm} cm')
+            st.sidebar.write(f'Leg Measurement: {leg} cm')
 
             height = 170
             weight = 80
