@@ -43,18 +43,20 @@ if uploaded_file is not None:
     with col1:
         # Can be used wherever a "file-like" object is accepted:
         image = uploaded_file.read()
-        st.image(image)
+        st.image(image, use_column_width=True)
 
     with col2:
         if st.button('Screen Image'):
 
             height = 170
             weight = 80
+            bmi = 24.9
             result = 'Normal'
             
             st.write(f'Height: {height} cm')
             st.write(f'Weight: {weight} kg')
-            st.title(f'Result: {result}')
+            st.write(f'BMI: {bmi}')
+            st.write(f'Result: {result}')
             
 
 
