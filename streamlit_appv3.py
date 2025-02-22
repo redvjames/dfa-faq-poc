@@ -23,7 +23,7 @@ with col1:
     )
 # Logo and "Developed by E-CAIR" text in the second column
 with col2:
-    st.image("/content/CAIR_cropped.png", use_container_width=True)
+    st.image("/images/CAIR_cropped.png", use_container_width=True)
     st.markdown(
         """
         <div style="text-align: center; margin-top: -10px;">
