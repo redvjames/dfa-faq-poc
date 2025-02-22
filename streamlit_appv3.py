@@ -47,7 +47,7 @@ if uploaded_file is not None:
 
     with col2:
         if st.button('Screen Image'):
-            st.sidebar.title("Input Data")
+            st.sidebar.title("Model Results")
             head = 20
             arm = 5
             leg = 5
